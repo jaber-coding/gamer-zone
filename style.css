@@ -11,6 +11,7 @@ nav{
     margin-left:120px;
     margin-right: 120px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .logo{display: flex;
 gap:20px;
@@ -54,7 +55,92 @@ gap:20px;
     height:40%;
     align-self: center;
 }
-@media screen and (max-width: 425px)
+.paragraph{
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+/* bannner */
+.banner{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.bannerleftitems{
+    margin-left: 120px;
+    padding-top: 100px;
+    margin-right: 120px;
+    margin-bottom: 100px;
+   
+}
+.bannerleft{
+    background-image: url(images/Group\ 14.png);
+    background-repeat: no-repeat;
+    
+}
+.play{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #0B0223;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    
+}
+.goat{
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+}
+.featureitem{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.featureitem img{
+    height:10%;
+
+}
+.leftbutton{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+.btn{
+    color: white;
+    padding: 16px 30px;
+    border-radius: 50px;
+    background:linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    border-style: none;
+}
+.btn2{
+    color: white;
+    padding: 16px 30px;
+    border-radius: 50px;
+    background: #4EC5F7;
+    border-style: none;
+}
+.bannerright{
+    margin-right: 120px;
+}
+.bannerright img{
+   
+    height:auto;
+    width:500px;
+}
+
+
+
+@media screen and (max-width: 576px)
 {
     nav{
     display: flex;     
@@ -68,5 +154,33 @@ gap:20px;
     flex-direction: column;
     margin-top: 20px;
     align-items:center;
+    }
+    .banner{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .bannerright img{
+        width: 100%;
+    }
+    .bannerright{
+        align-items: center;
+        margin: auto;
+    }
+
+    .bannerleft{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        justify-content: center; 
+    }
+    .bannerleftitems{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
     }
 }
