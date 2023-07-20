@@ -333,10 +333,9 @@ h2{
 }
 /* game category */
 .gamescontainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     align-items: center;
     justify-content: center;
     margin-top: 100px;
@@ -347,22 +346,94 @@ h2{
     width:40px;
     height: 40px;
 }
-/* .gamescontainer2{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
-    margin-left: 120px;
-    margin-right: 120px;
-} */
+
 .gamename{
     font-weight: 600;
+}
+.gamename2{
+    font-weight: 600;
+    color: #FF42A5;
 }
 .gamelist{
     display: flex;
     gap: 10px;
     align-items: center;
-    
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.gamelist2{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border-color: #FF42A5;
+    border-style: solid;
+    border-radius: 50px;
+    width: auto; 
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* footer */
+footer{display: flex;
+    flex-direction: column;
+    height: auto;
+    background: #0B0223; 
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-top: 100px;
+}
+.logo2{
+    display:flex;
+    gap:20px;
+    align-items:center;
+    justify-content: center;
+}
+.logo2 img{
+    width:87px;
+    height: 41px;
+    align-self: center;
+}
+.logo2 h1{
+    font-size: 2.5rem;
+    font-weight:700;
+    color: white;
+}
+.logo2 h1 span{
+    color: #FF42A5 ;
+}
+.footernav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.footernav2{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.footerparagraph{
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+.footerparagraph2{
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    opacity: 50%;
+    text-align: center;
+}
+.footersocialicons{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 @media screen and (max-width: 576px)
 {
@@ -491,18 +562,26 @@ h2{
         display: flex;
         flex-direction: column;
         margin: 100px 0px 0px 0px;
-        width: 90%;
-        
+        width: 90%; 
     }
-    .gamescontainer{
+    /* .gamescontainer{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        column-gap: 10px;
-        row-gap: 20px;
+        column-gap: 5px;
+        row-gap: 10px;
         align-items: center;
         justify-content: center;
         margin-top: 100px;
-       
+    } */
+    .gamescontainer{
+        gap: 30px;
+        margin-top: 100px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    footer{
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
