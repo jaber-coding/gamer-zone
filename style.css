@@ -201,6 +201,136 @@ h2{
     text-align: left;
     width:280px;
 }
+/* game feature */
+.gamefeaturecontainer1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.gamefeatureleft1{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    width:20%;
+    margin-top: 100px;
+    margin-left: 300px;
+}
+.gamefeatureright1{
+    margin-top: 100px;
+    position:relative;
+    margin-right: 120px;
+}
+.featureimg1{
+    position: relative;
+    width:500px;
+}
+.featureimg2{
+    position:absolute;
+    width:200px;
+    bottom: -50px;
+    left: -100px;
+}
+/* game feature2 */
+.gamefeaturecontainer2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:100px;
+    
+}
+.gamefeatureright2{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width:20%;
+    margin-top: 100px;
+    margin-right: 300px;
+}
+.gamefeatureleft2{
+    margin-top: 100px;
+    position:relative;
+    margin-left: 120px;
+}
+.featureimg1{
+    position: relative;
+    width:500px;
+}
+.featureimg3{
+    position: relative;
+    width:500px;
+}
+.featureimg2{
+    position:absolute;
+    width:200px;
+    bottom: -50px;
+    right: -100px;
+}
+.featureimg4{
+    position:absolute;
+    width:200px;
+    bottom: -50px;
+    right: -100px;
+}
+/* careers */
+.careers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    margin-top: 120px; 
+    
+}
+.careersleft{
+    display: flex;
+    flex-direction: column;
+    margin-left:120px;
+    width: 40%;
+    text-align: left;
+}
+.careerssectiontitle{
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.careerparagraph{
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+
+}
+.positions{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.postionsleft{
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    text-align: left;
+}
+.positionsright{
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    text-align: right;
+}
+.btn3{
+    color: #FF42A5;
+    padding: 16px 30px;
+    border-radius: 50px;
+    background: white;
+    border-style: none;
+} 
+.careersimg{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-right: 120px;
+}
 @media screen and (max-width: 576px)
 {
     nav{
@@ -267,5 +397,68 @@ h2{
         align-items: center;
         gap:20px;
         margin-top: 20px;
+    }
+    .gamefeaturecontainer1{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        align-items: center;
+    }
+    .gamefeaturecontainer2{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 100px;
+        align-items: center;
+    }
+    .gamefeatureright1{
+        
+        width: 100%;
+        margin: 0px;
+    }
+    .featureimg1{
+        width: 80%;
+    }
+    .featureimg3{
+        width: 80%;
+        margin-right: 0px;
+        padding: 0px;
+    }
+    .featureimg2{
+        width: 30%;
+        bottom: -20px;
+        left: 20px;
+    }
+    .featureimg4{
+        width: 30%;
+        bottom: -20px;
+        right: 20px;
+    }
+    .gamefeatureleft2{
+       
+        width: 100%;
+        margin:0px
+    }
+    .gamefeatureleft1{
+        width: 100%;
+        margin: 0px;
+        text-align: center;
+    }
+    .gamefeatureright2{
+        width: 100%;
+        margin:0px;
+        text-align: center;
+    }
+    .careers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+    .careersleft{
+        display: flex;
+        flex-direction: column;
+        margin: 100px 0px 0px 0px;
+        width: 90%;
+        
     }
 }
